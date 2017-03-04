@@ -1,0 +1,2 @@
+class FgapiServer < ApplicationRecord
+end

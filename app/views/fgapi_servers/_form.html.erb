@@ -1,0 +1,17 @@
+<%= form_for(fgapi_server) do |f| %>
+  <% if fgapi_server.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fgapi_server.errors.count, "error") %> prohibited this fgapi_server from being saved:</h2>
+
+      <ul>
+      <% fgapi_server.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
