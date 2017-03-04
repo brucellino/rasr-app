@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Montserrat');
+@import 'bootstrap';
+@import "font-awesome";
+
+h1{
+  font-family: 'Audiowide', Helvetica;
+  font-weight: 200;
+}
+
+h2{
+  font-family: 'Audiowide', Helvetica;
+  font-weight: 100;
+}
+p {
+  font-family: 'Montserrat', Arial, Sans-Serif;
+}
+
+body {
+  background: url('razor.svg');
+  line-height: 1.5;
+  color: white;
+  background-size: 10em;
+  background-position: bottom right;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+}
+.container {
+margin: 100px auto;
+padding: 20px;
+background: black;
+background-color: rgba(0,0,0,0.6);
+text-align: center;
+border-radius: 40px;
+}
