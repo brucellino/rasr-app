@@ -8,25 +8,18 @@ A small ruby on rails app to talk to glibrary and future gateway
 
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Use this README to get the RASR app up and running
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
+* Ruby Version : 2.x
+* System dependencies: none
+* Configuration: Use environment variables
+  - `glibrary_username`
+  - `glibrary_password`
+* Database creation: Only tested in development yet; `RAILS_ENV=development`
+* Database initialization: `rake db:migrate`
+* How to run the test suite:
+  - `rails test`
+* Services (job queues, cache servers, search engines, etc.):
+  - none
 * Deployment instructions
-
-* ...
+  - `rails s`
