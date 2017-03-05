@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+- 2.2.2
+- 2.3.0
+- 2.3.1
+before_script:
+  - bundle install
+  - bundle exec rake db:drop db:create db:migrate
+script:
+  - bundle exec rails test
+notifications:
+  slack: africa-arabia-roc:qnCRTSXe8ZwiwJfIgaN0xUJN
