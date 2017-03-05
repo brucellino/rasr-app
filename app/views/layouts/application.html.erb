@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name=”viewport” content=”width=device-width, initial-scale=1">
-    <title>RasrApp2</title>
+    <!-- <meta name=”viewport” content=”width=device-width, initial-scale=1"> -->
+        <title>RASR</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-
+      <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="/"><%= fa_icon("home", text: "Home") %></a></li>
+          <li><a href="/pages/about"><%= fa_icon("info-circle", text: "About") %></a></li>
+          <li><a href="glibrary/check_status"><%= fa_icon("institution", text: "Library") %></a></li>
+          <li><a href="experiments"><%= fa_icon("flask", text: "Experiments") %></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><%= fa_icon("user", text: "Sign In") %></a></li>
+    </ul>
+      </div>
+      </nav>
     <%= yield %>
+
   </body>
 </html>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170304113829) do
+ActiveRecord::Schema.define(version: 20170305121459) do
 
   create_table "experiments", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -23,8 +23,13 @@ ActiveRecord::Schema.define(version: 20170304113829) do
   end
 
   create_table "glibraries", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "username"
+    t.string   "password"
+    t.string   "token"
+    t.boolean  "valid_token"
+    t.datetime "token_remaining"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
   create_table "languages", force: :cascade do |t|
