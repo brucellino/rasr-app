@@ -1,3 +1,5 @@
-<h1>Glibrary index</h1>
+<h1>Glibrary  <small>Token will expire in <%= distance_of_time_in_words($glibrary_token_expires ,Time::now()) %> </small></h1>
 
-Token will expire at <% @glibrary_token_expires.to_s %>
+There are <%= $repos.count %> repositories
+
+<%= @repo_list.to_s %>

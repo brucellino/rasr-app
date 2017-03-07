@@ -1,12 +1,16 @@
 Rails.application.routes.draw do
 
-  get 'glibrary/login'
-  get 'glibrary/index'
-
+# static pages
   root 'pages#home'
   get 'pages/home'
   get 'pages/about'
 
-  resources :fgapi_servers
+# Library
+  get 'glibrary/login'
+  get 'glibrary/index'
+
+# Experiments
+
+  get 'experiments/index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
