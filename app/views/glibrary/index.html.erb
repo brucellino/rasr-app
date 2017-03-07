@@ -1,21 +1,37 @@
-<h1>Glibrary index</h1>
+<h1>Glibrary  <small>Token will expire in <%= distance_of_time_in_words($glibrary_token_expires ,Time::now()) %> </small></h1>
 
-Token will expire at <% @glibrary_token_expires.to_s %>
-<div class="container text-center" style="width: 100% display: block">
-  <table>
+There are <%= $repos.count %> repositories
+
+<div class="well">
+  <table class="text-center" style="width: 100%">
     <thead>
       <tr>
         <td>
-          Language
+          Repo Name
         </td>
         <td>
-          Dataset
+          Path
         </td>
         <td>
-          Configuration
+          Storage
         </td>
       </tr>
     </thead>
+  <% $repos.each do |repo| %>
+  <tr>
+    <td>
+      <%= repo['name'] %>
+    </td>
+    <td>
+      <%= repo['path'] %>
+    </td>
+    <td>
+      <% repo['storage'] if repo['storage'].nil?%>
+    </td>
+  </tr>
+  <% end %>
+
+
   </table>
 
 </div>
