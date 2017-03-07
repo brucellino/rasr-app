@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'glibrary/check_status'
   get 'glibrary/login'
-  get 'glibrary/get_token'
   get 'glibrary/index'
 
   root 'pages#home'
