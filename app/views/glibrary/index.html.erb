@@ -2,36 +2,4 @@
 
 There are <%= $repos.count %> repositories
 
-<div class="well">
-  <table class="text-center" style="width: 100%">
-    <thead>
-      <tr>
-        <td>
-          Repo Name
-        </td>
-        <td>
-          Path
-        </td>
-        <td>
-          Storage
-        </td>
-      </tr>
-    </thead>
-  <% $repos.each do |repo| %>
-  <tr>
-    <td>
-      <%= repo['name'] %>
-    </td>
-    <td>
-      <%= repo['path'] %>
-    </td>
-    <td>
-      <% repo['storage'] if repo['storage'].nil?%>
-    </td>
-  </tr>
-  <% end %>
-
-
-  </table>
-
-</div>
+<%= @repo_list.to_s %>
