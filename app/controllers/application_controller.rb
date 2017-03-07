@@ -13,4 +13,6 @@ class ApplicationController < ActionController::Base
   $glibrary_response = HTTParty::post("#{base_uri}" + "/users/login", :body => {:username => ENV['GLIBRARY_USERNAME'], :password => ENV['GLIBRARY_PASSWORD']} ,  :header =>  "Content-Type:Application/json").parsed_response
   ap $glibrary_response
 
+
+  $repos = get("/repos/")
 end
