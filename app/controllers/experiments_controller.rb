@@ -69,6 +69,6 @@ class ExperimentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def experiment_params
-      params.fetch(:experiment, {})
+      params.require(:experiment).permit(:user, :language, :primary, :repo)
     end
 end

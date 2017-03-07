@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: English
+  corpus: basic
+
+two:
+  name: Afrikaans
+  corpus: basic
