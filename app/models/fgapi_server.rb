@@ -11,9 +11,5 @@ class FgapiServer < ApplicationRecord
   def GetTask
   end
 
-  private:
-  endpoint
-  apiversion
-  
 
 end
