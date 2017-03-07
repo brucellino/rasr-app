@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :experiments
 # static pages
   root 'pages#home'
   get 'pages/home'

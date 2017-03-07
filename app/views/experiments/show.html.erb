@@ -1,4 +1,24 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <strong>User:</strong>
+  <%= @experiment.user %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @experiment.language %>
+</p>
+
+<p>
+  <strong>Primary:</strong>
+  <%= @experiment.primary %>
+</p>
+
+<p>
+  <strong>Repo:</strong>
+  <%= @experiment.repo %>
+</p>
+
 <%= link_to 'Edit', edit_experiment_path(@experiment) %> |
 <%= link_to 'Back', experiments_path %>
