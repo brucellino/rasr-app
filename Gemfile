@@ -15,6 +15,7 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 
 gem 'awesome_print'
 gem 'httparty'
+gem 'hublot'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views

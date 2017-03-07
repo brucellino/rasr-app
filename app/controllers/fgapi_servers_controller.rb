@@ -61,6 +61,12 @@ class FgapiServersController < ApplicationController
     end
   end
 
+ def createTask
+   respond_to do |format|
+     format.html
+     format.json { render :show, status: :created, location: @fgapi_server }
+ end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_fgapi_server

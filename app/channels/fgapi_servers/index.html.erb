@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fgapi Servers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fgapi_servers.each do |fgapi_server| %>
+      <tr>
+        <td><%= link_to 'Show', fgapi_server %></td>
+        <td><%= link_to 'Edit', edit_fgapi_server_path(fgapi_server) %></td>
+        <td><%= link_to 'Destroy', fgapi_server, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fgapi Server', new_fgapi_server_path %>
