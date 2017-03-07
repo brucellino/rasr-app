@@ -4,7 +4,6 @@ rvm:
 - 2.3.0
 - 2.3.1
 before_script:
-  - apt-get install openssl
   - bundle install
   - bundle exec rake db:drop db:create db:migrate
 script:
