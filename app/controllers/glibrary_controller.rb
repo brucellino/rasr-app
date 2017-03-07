@@ -11,5 +11,6 @@ class GlibraryController < ApplicationController
 
   end
   def view
+    
   end
 end

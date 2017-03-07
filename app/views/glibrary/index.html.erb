@@ -2,4 +2,6 @@
 
 There are <%= $repos.count %> repositories
 
-<%= @repo_list.to_s %>
+<% form_tag('repo', :method => :post) do %>
+<%= select("repo", "repo", $repos.parsed_response.each.map {|repo| [repo['name'], repo.to_s] }, {class: "form-control" }) %>
+<% end %>
