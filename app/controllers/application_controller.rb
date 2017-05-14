@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   include HTTParty
   require "json"
   puts "new glibrary"
-  base_uri "https://glibrary.ct.infn.it:3500/v2"
+  base_uri "http://localhost:3500/v2"
   # Connect to glibrary right here.
   format :json
   #headers 'Content-Type:application/json'

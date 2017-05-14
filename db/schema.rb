@@ -32,9 +32,4 @@ ActiveRecord::Schema.define(version: 20170305121459) do
     t.datetime "updated_at",      null: false
   end
 
-  create_table "languages", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end
