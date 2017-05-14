@@ -1,7 +1,15 @@
 class GlibraryController < ApplicationController
   require "time"
-  @glibrary_token_created = Time.iso8601($glibrary_response['created'])
-  @glibrary_ttl = $glibrary_response['ttl']
-  @glibrary_token_expires = @glibrary_token_created + @glibrary_ttl
-  puts" Glibrary token expires at #{@glibrary_token_expires}"
+  def index
+    @repos = $repos.parsed_response
+    @repo_list = @repos.map { |repo| repo['name']}
+    #render json: @repos
+  end
+  def time_remaining
+
+    return @glibrary_token_expires
+
+  end
+  def view
+  end
 end
