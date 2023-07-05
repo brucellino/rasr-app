@@ -8,7 +8,7 @@ gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 # Add components
 gem 'bootstrap-sass', '>= 3.4.0'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
